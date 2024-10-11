@@ -14,6 +14,10 @@ Para configurar o ambiente de desenvolvimento:
 3. Navegue até a pasta do projeto index.html
 4. Execute a extensão `Go Live` para poder se aventurar neste projeto. 
 
+# Dependências 
+npm install styled-components
+npm install bootstrap
+
 # Integrantes 
 - **Abner de Paiva Barbosa**             | RM558468
 - **Beatriz Vieira de Novais**           | RM554746
