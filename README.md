@@ -9,10 +9,23 @@ A criação de um stand de carrinhos em arduino como forma de marketing, que pos
 # Instalação 
 Para configurar o ambiente de desenvolvimento:
 
-1. Pegue o link deste repositório (https://github.com/NeugeMa/RaceVolt)
+1. Clone o repositório:
+   ```sh
+   https://github.com/NeugeMa/RaceVolt
+  
 2. Clone o repositório.
-3. Navegue até a pasta do projeto index.html
-4. Execute a extensão `Go Live` para poder se aventurar neste projeto. 
+3. Digite Crtl + J para abrir o terminal e digite:
+  ```bash
+  cd RaceVolt
+  npm install
+  ```
+4. Instale as seguintes dependências:
+  ```bash
+  npm install styled-components
+  npm install bootstrap
+  ```
+
+5. Execute o comando `npm start` para poder se aventurar neste projeto. 
 
 # Integrantes 
 - **Abner de Paiva Barbosa**             | RM558468
