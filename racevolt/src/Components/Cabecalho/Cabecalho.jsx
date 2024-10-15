@@ -1,17 +1,29 @@
-function Cabecalho () {
+import { Link, BrowserRouter as Router } from "react-router-dom";
+
+function Cabecalho() {
     return (
-        <div className="container-header">
-            <h1>RaceVolt</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/sobre">Sobre Nós</a></li>
-                    <li><a href="/contato">Contato</a></li>
-                </ul>
-            </nav>
-            <button className="btn-login">Login</button>
-        </div>
-    )
+        <Router>
+            <div className="container-header">
+                <h1>RACEVOLT</h1>
+                <div className="navbar">
+                    <nav>
+                        <ul className="navlinks">
+                            <li>
+                                <Link className="active" to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/sobre">Sobre Nós</Link>
+                            </li>
+                            <li>
+                                <Link to="/contato">Contato</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button className="btn-login">LOGIN</button>
+                </div>
+            </div>
+        </Router>
+    );
 }
 
-export default Cabecalho
+export default Cabecalho;
