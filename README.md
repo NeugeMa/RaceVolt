@@ -14,7 +14,10 @@ A nossa proposta envolve a implementação de uma plataforma tecnológica que po
 # Instalação 
 Para configurar o ambiente de desenvolvimento:
 
-1. Pegue o link deste repositório (https://github.com/NeugeMa/RaceVolt)
+1. Clone o repositório:
+   ```sh
+   https://github.com/NeugeMa/RaceVolt
+  
 2. Clone o repositório.
    
 3. Após entrar, digite `cd racevolt` para entrar na pasta do projeto.
