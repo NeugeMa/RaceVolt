@@ -7,11 +7,25 @@
     --color-black: #000;
     --color-grey: #767676;
     --color-white: #fff; 
+
+    --fonte-titulo: "Jaro", sans-serif;
+    --fonte-principal: "Mirza", serif;
 }
 
+* {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
 
 /* Estilização Cabeçalho */ 
 .container-header {
+    font-family: var(--fonte-titulo);
     display: flex;
     justify-content: space-between;
     align-items: center;

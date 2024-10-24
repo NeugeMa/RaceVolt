@@ -1,12 +1,11 @@
 import './App.css'; // CSS Global
-import Cabecalho from './Components/Cabecalho/Cabecalho'
-import Home from './pages/Home';
+import Cabecalho from './Components/Cabecalho/Cabecalho';
 
 function App() {
   return (
     <div className="App">
-      <Cabecalho /> 
-      <Home/> 
+      <Cabecalho />
+
 
     </div>
   );
