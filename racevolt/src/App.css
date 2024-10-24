@@ -55,6 +55,45 @@ body {
     font-weight: bold;
 }
 
+/* Estilizando Rodapé */
+.container-footer {
+    font-family: var(--fonte-principal);
+    background-color: #000;
+    width: 100%;
+}
+
+.content-footer {
+    display: flex;
+} 
+
+.conteudo h4 {
+    color: var(--color-white);
+}
+
+.conteudo li {
+    margin-bottom: 30px;
+    color: var(--color-grey);
+    cursor: pointer;
+}
+
+.forms-footer h2 {
+    color: white;
+}
+
+.forms-footer input {
+    border-radius: 5px;
+    background-color: #000;
+    background-color: var(--color-white);
+
+}
+
+.forms-footer button {
+    border-radius: 5px;
+    background-color: var(--color-white);
+    font-family: var(--fonte-principal);
+}
+
+
 
 
 
