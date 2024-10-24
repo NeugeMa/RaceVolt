@@ -19,7 +19,6 @@ function Cabecalho() {
                             </li>
                         </ul>
                     </nav>
-                    <button className="btn-login">LOGIN</button>
                 </div>
             </div>
         </Router>
