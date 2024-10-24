@@ -1,10 +1,15 @@
 # Projeto Challenge 
 
-Esse projeto busca-se promover a Fórmula E, a categoria de automobilismo totalmente elétrica, para um público mais amplo. Nossa meta é que aja aumento de interrese na Fórmula E, atraindo novos fãs e impulsionando a adoração da mobilidade sustentável. 
+Esse projeto busca-se promover o que as novas gerações estão buscando.. experiências que conectem aprendizado prático e diversão, e é aqui que nosso projeto pode brilhar. 
 
-Desenvolvemos uma plataforma digital (site) que nos facilita o acesso à novas informações e torne a Fórmula E mais acessível. 
+Queremos desenvolver uma experiência que não apenas envolva os participantes, mas também ensine habilidades essenciais para o futuro.
 
-A criação de um stand de carrinhos em arduino como forma de marketing, que possibilitam a cativação do público.  
+A nossa proposta envolve a implementação de uma plataforma tecnológica que pode ser escalada de diversas formas:
+
+- Eventos Presenciais: Competências realizadas em escolas, shopping centers e centros comunitários, onde as crianças podem se inscrever, montar e programar seus mini-carros elétricos.
+
+- Ambiente Online: Criação de uma plataforma digital que ofereça tutoriais, desafios e competições virtuais, permitindo que crianças de diferentes regiões participem e se conectem, expandindo nosso alcance.
+
 
 # Instalação 
 Para configurar o ambiente de desenvolvimento:
@@ -14,18 +19,16 @@ Para configurar o ambiente de desenvolvimento:
    https://github.com/NeugeMa/RaceVolt
   
 2. Clone o repositório.
-3. Digite Crtl + J para abrir o terminal e digite:
-  ```bash
-  cd RaceVolt
-  npm install
-  ```
-4. Instale as seguintes dependências:
-  ```bash
-  npm install styled-components
-  npm install bootstrap
-  ```
+   
+3. Após entrar, digite `cd racevolt` para entrar na pasta do projeto.
 
-5. Execute o comando `npm start` para poder se aventurar neste projeto. 
+4. Então depois digite `npm install` para instalar todas depêndencias.
+
+5. Execute por final `npm start` para poder se aventurar neste projeto. 
+
+# Dependências 
+- npm install styled-components
+- npm install bootstrap
 
 # Integrantes 
 - **Abner de Paiva Barbosa**             | RM558468
