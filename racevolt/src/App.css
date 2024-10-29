@@ -29,10 +29,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
 .container-header h1 {
     margin-left: 15px;
+    letter-spacing: 2px;
 }
 
 .container-header .navbar {
