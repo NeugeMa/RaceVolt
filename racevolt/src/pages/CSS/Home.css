@@ -1,0 +1,68 @@
+:root {
+    --color-darkblue: #1D2130;
+    --color-darkpurple: #1E1A4E;
+    --color-purple: #3A3A72;
+    --color-lightpurple: #64749C;
+
+    --color-black: #000;
+    --color-grey: #767676;
+    --color-white: #fff; 
+
+    --fonte-titulo: "Jaro", sans-serif;
+    --fonte-principal: "Mirza", serif;
+}
+
+.subtitulo {
+    margin-top: 50px;
+    margin-left: 10%;
+    color: var(--color-darkblue);
+}
+
+.container-home {
+    font-family: var(--fonte-principal);
+}
+
+.fundo {
+    width: 100%;
+    height: auto;
+}
+
+.conteudo-fundo {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.conteudo-fundo h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--color-white);
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+.conteudo-fundo h4 {
+    font-size: 1.5rem;
+    color: var(--color-white)
+}
+
+.btn01{
+    background-color: white;
+    color: black;
+    font-family: 'Jaro', sans-serif;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+} 
+
+.futuro-velocistas {
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-left: 30px;
+}
+
+.futuro-velocistas p {
+    font-size: 20px;
+    margin-left: 30px;
+}
