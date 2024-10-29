@@ -12,12 +12,30 @@
     --fonte-principal: "Mirza", serif;
 }
 
-.subtitulo {
-    margin-top: 50px;
-    margin-left: 10%;
-    color: var(--color-darkblue);
+/* Tags Globais */ 
+p {
+    font-size: 1.2rem;
 }
 
+.titulo {
+    font-size: 2.5rem;
+}
+
+.subtitulo {
+    color: var(--color-darkblue);
+    margin-bottom: 20px;
+}
+.linha-subtitulo {
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+
+/* */
 .container-home {
     font-family: var(--fonte-principal);
 }
@@ -54,15 +72,70 @@
     cursor: pointer;
 } 
 
-.futuro-velocistas {
+.introducao {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.titulo {
-    font-size: 2.5rem;
-    margin-left: 30px;
+.introducao-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.futuro-velocistas p {
-    font-size: 20px;
-    margin-left: 30px;
+.intro-fundo {
+    max-width: 20%;
+    margin-right: 10%;
+    margin-left: 5%;
+    
 }
+
+.intro-conteudo {
+    margin-left: 10%;
+}
+
+/* Conteúdo Principal - Carrinhos Arduino */
+.arduino {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--color-darkblue);
+}
+
+.subtitulo02 {
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+.linha-subtitulo02 {
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-white);
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+.arduino-fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-arduino {
+    max-width: 20%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.arduino-img {
+    max-width: 35%; /* Ajuste conforme necessário */
+}
+
+
+.arduino-fundo h1, h2{
+    color: var(--color-white);
+}
+
+.arduino-fundo p {
+    color: var(--color-white);
+}
+
