@@ -29,10 +29,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
+}
 
 .container-header h1 {
     margin-left: 15px;
+    letter-spacing: 2px;
 }
 
 .container-header .navbar {
@@ -48,11 +49,69 @@ body {
 }
 
 .active {
-    font-weight: 900;
     text-decoration: underline;
     text-underline-offset: 8px; 
     text-decoration-thickness: 2px; 
-    font-weight: bold;
+}
+
+/* Estilizando - Rodapé */
+.container-footer {
+    font-family: var(--fonte-principal);
+    background-color: #000;
+    width: 100%;
+}
+
+.logo {
+    height: 80px;
+    margin-top: 25px; 
+    margin-left: 35px;
+}
+
+.content-footer {
+    display: flex;
+} 
+
+.conteudo h4 {
+    color: var(--color-white);
+}
+
+.url {
+    margin-bottom: 30px;
+    color: var(--color-grey);
+    cursor: pointer;
+}
+
+.forms-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+
+    margin-left: 50%;
+    padding: 20px;
+}
+
+.forms-footer h2 {
+    color: var(--color-white);
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    padding: 10px 40px;
+    color: var(--color-grey);
+}
+
+.form-button {
+    background-color: var(--color-white);
+    color: var(--color-darkblue);
+    border: none;
+    padding: 11px 20px;
+    cursor: pointer;
 }
 
 

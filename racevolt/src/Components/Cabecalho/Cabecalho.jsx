@@ -1,4 +1,5 @@
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Cabecalho() {
     return (
@@ -9,7 +10,7 @@ function Cabecalho() {
                     <nav>
                         <ul className="navlinks">
                             <li>
-                                <Link className="active" to="/">Home</Link>
+                                <Link to="/">Home</Link>
                             </li>
                             <li>
                                 <Link to="/sobre">Sobre Nós</Link>

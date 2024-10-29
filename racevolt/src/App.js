@@ -1,14 +1,15 @@
 import './App.css'; // CSS Global
+import AppRoutes from './routes.js';	
+
 import Cabecalho from './Components/Cabecalho/Cabecalho';
+import Rodape from './Components/Rodape/Rodape';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
+    <>
       <Cabecalho />
-
-
-    </div>
+        <AppRoutes />
+      <Rodape />
+    </>
   );
 }
-
-export default App;
