@@ -1,9 +1,7 @@
-import { BrowserRouter as Router } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function Cabecalho() {
     return (
-        <Router>
             <div className="container-header">
                 <h1>RACEVOLT</h1>
                 <div className="navbar">
@@ -22,7 +20,6 @@ function Cabecalho() {
                     </nav>
                 </div>
             </div>
-        </Router>
     );
 }
 
