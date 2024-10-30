@@ -34,7 +34,10 @@ const Sobre = () => {
         </div>
       </div>
       <div className="integrantes">
+        <h2>Conheça a RaceVolt</h2>
+        <p></p>
         <div className="cards">
+          
         </div>
       </div>
     </div>
