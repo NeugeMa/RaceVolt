@@ -1,6 +1,5 @@
-import { BrowserRouter as Router } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from '../../assets/Logo-Ficaps.png';  
+import logo from '../../assets/Logo-Ficaps.png';
 // Adicionar LOGO + Arrumar formulário
 
 
@@ -11,7 +10,6 @@ const Rodape = () => {
     }       
 
     return (
-        <Router>
             <div className="container-footer">  
                 <img src={logo} alt="Logo" className="logo" />
                     <div className="content-footer">
@@ -49,7 +47,6 @@ const Rodape = () => {
                         </div>
                     </div>
             </div>
-        </Router>
     )
 }
 
