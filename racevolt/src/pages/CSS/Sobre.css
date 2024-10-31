@@ -80,6 +80,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -142px;
 
     img {
         border-radius: 12px;
@@ -91,6 +92,7 @@ p {
 .proposta {
     background-color: #64749C;
     display: flex;
+    padding-top: 150px;
 
     p, h3 {
         color: var(--color-white);
@@ -139,3 +141,57 @@ p {
     }
 }
 
+.cards {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+
+
+.card-item {
+    width: 300px;
+    height: 320px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    p {
+        font-family: var(--fonte-principal);
+        color: var(--color-darkblue);
+        font-weight: 500;
+        text-align: center;
+        margin: 8px 0 0 2px;
+    }
+}
+
+.primeira-linha, .segunda-linha {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.position-top {
+    img{
+        object-position: top;
+    }
+}
+
+.rede-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+    }
+}

@@ -1,6 +1,13 @@
 import React from 'react';
 import './CSS/Sobre.css'
 import time from '../assets/time.png'
+import Abner from '../assets/Abner.jpeg'
+import Beatriz from '../assets/Beatriz.jpeg'
+import Mariana from '../assets/Mariana.jpeg'
+import Fernando from '../assets/Fernando.jpeg'
+import Thomas from '../assets/Thomas.jpeg'
+import linkedin from '../assets/linkedin.jpeg'
+import github from '../assets/github.jpeg'
 
 const Sobre = () => {
   return (
@@ -37,7 +44,50 @@ const Sobre = () => {
         <h2>Conheça a RaceVolt</h2>
         <p></p>
         <div className="cards">
-          
+          <div className="primeira-linha">
+            <div className="card-item position-top">
+              <img src={Abner} alt="" />
+              <p>Abner de Paiva Barbosa</p>
+              <div className="rede-social">
+                <img src={linkedin} alt="" />
+                <img src={github} alt="" />
+              </div>
+            </div> 
+            <div className="card-item">
+              <img src={Beatriz} alt="" />
+              <p>Beatriz Vieira de Novais</p>
+              <div className="rede-social">
+                <img src={linkedin} alt="" />
+                <img src={github} alt="" />
+              </div>
+            </div>
+            <div className="card-item">
+              <img src={Mariana} alt="" />
+              <p>Mariana Neugebauer Dourado</p>
+              <div className="rede-social">
+                <img src={linkedin} alt="" />
+                <img src={github} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="segunda-linha">
+            <div className="card-item">
+              <img src={Fernando} alt="" />
+              <p>Fernando Luiz Silva Antonio</p>
+              <div className="rede-social">
+                <img src={linkedin} alt="" />
+                <img src={github} alt="" />
+              </div>
+            </div>
+            <div className="card-item position-top">
+              <img src={Thomas} alt="" />
+              <p>Thomas de Almeida Reichmann</p>
+              <div className="rede-social">
+                <img src={linkedin} alt="" />
+                <img src={github} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
