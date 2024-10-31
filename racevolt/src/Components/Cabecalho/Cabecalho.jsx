@@ -1,20 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Cabecalho() {
+    const location = useLocation();
+
+    const headerStyles = {
+        color: location.pathname === "/contato" ? "white" : "inherit",
+    };
+
     return (
             <div className="container-header">
-                <h1>RACEVOLT</h1>
+                <h1 style={headerStyles}>RACEVOLT</h1>
                 <div className="navbar">
                     <nav>
                         <ul className="navlinks">
                             <li>
-                                <Link to="/">Home</Link>
+                                <Link to="/" style={headerStyles}>Home</Link>
                             </li>
                             <li>
-                                <Link to="/sobre">Sobre Nós</Link>
+                                <Link to="/sobre" style={headerStyles}>Sobre Nós</Link>
                             </li>
                             <li>
-                                <Link to="/contato">Contato</Link>
+                                <Link to="/contato" style={headerStyles}>Contato</Link>
                             </li>
                         </ul>
                     </nav>
