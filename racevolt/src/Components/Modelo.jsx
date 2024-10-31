@@ -27,7 +27,7 @@ const GLBViewer = ({ modelo, scale }) => {
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     const back = new renderer.setClearColor(0x000000, 0); // Fundo transparente
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.outputEncoding = THREE.sRGBEncoding;
+    //renderer.outputEncoding = THREE.sRGBEncoding;
     mountRef.current.appendChild(renderer.domElement);
 
     const controls = new OrbitControls(camera, renderer.domElement);
