@@ -17,15 +17,63 @@ p {
     font-size: 1.2rem;
 }
 
-.titulo01 {
+.sub01 {    /* Versão01 Estilo Subtítulo */ 
+    color: var(--color-darkblue);
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.linha-sub01 { /* Versão01 Estilo Linha-Subtítulo */
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit01 {    /* Versão01 Estilo Título */
+    font-size: 2.5rem;
+    margin-left: 15%;
+}
+
+.sub02 {    /* Versão02 Estilo Subtítulo */ 
+    color: var(--color-darkblue);
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.linha-sub02 { /* Versão02 Estilo Linha-Subtítulo */
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit02 {    /* Versão02 Estilo Título */
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sub-tit01 {
+    text-align: center;
+}
+
+
+
+
+
+.titulo {
     font-size: 2.5rem;
 }
 
-.subtitulo01 {
+.subtitulo {
     color: var(--color-darkblue);
     margin-bottom: 20px;
 }
-.linha-subtitulo01 {
+.linha-subtitulo {
     display: inline-block;
     width: 5%;
     height: 2px;
@@ -35,14 +83,13 @@ p {
 }
 
 
-/* */
 .container-home {
     font-family: var(--fonte-principal);
 }
 
 .fundo {
     width: 100%;
-    height: auto;
+    height: 80vh;
 }
 
 .conteudo-fundo {
@@ -73,7 +120,7 @@ p {
 } 
 
 .introducao {
-    margin-top: 5%;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -101,19 +148,10 @@ p {
     background-color: var(--color-darkblue);
 }
 
-.titulo02 {
-    color: var(--color-white);
-    margin-top: 30px;
-    margin-left: 20%;
-    font-size: 2.5rem;
-}
 .subtitulo02 {
     color: var(--color-white);
-    margin-left: 15%;
-    margin-top: 5%;
     margin-bottom: 20px;
 }
-
 .linha-subtitulo02 {
     display: inline-block;
     width: 5%;
@@ -123,31 +161,22 @@ p {
     margin-right: 10px; 
 }
 
-.conteudo-titulo p {
-    color: var(--color-white);
-    margin-left: 20%;
-}
-
 .arduino-fundo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
 .conteudo-arduino {
-    margin-left: 20%;
-}
-
-.conteudo-arduino p {
-    margin-right: 20px;
+    max-width: 20%;
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 .arduino-img {
-    width: 30%;
-    height: 55vh;
-    margin-right: 30%;
+    max-width: 35%; /* Ajuste conforme necessário */
 }
+
 
 .arduino-fundo h1, h2{
     color: var(--color-white);
@@ -157,36 +186,150 @@ p {
     color: var(--color-white);
 }
 
-.card-circulo {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.circulo {
-    width: 300px;
-    height: 300px;
-    background-color: var(--color-darkpurple); 
-    border-radius: 50%;
+/* Conteúdo Eventos - Eventos */
+.destaque {
+    text-decoration: overline;
 }
 
-.titulo {
-    font-size: 2.5rem;
+.container-eventos {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 11%;
+    margin-bottom: 5%;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-darkpurple);
+    border-radius: 50%;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+}
+
+.img-circulo {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.msg-circulo {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/* Conteúdo Anúncios - Anúncios */ 
+
+.anuncio-img {
     margin-left: 15%;
 }
 
-.subtitulo {
-    color: var(--color-darkblue);
-    margin-left: 10%;
-}
-.linha-subtitulo {
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    background-color: var(--color-darkblue);
-    vertical-align: middle; 
-    margin-right: 10px; 
+.conteudo-anuncio {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(30%, 1700%);
+    width: 60%; 
+    text-align: center;
+    margin-left: 0; 
+} 
+
+.anuncio-input {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    background-color: transparent;
+    padding: 10px 40px;
 }
 
-.destaque {
-    color: var(--color-grey);
+.anuncio-button {
+    background-color: var(--color-white);
+    border: none;
+    padding: 11px 20px;
+    cursor: pointer;
 }
+
+.conteudo-anuncio h1 {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.conteudo-anuncio span {
+    display: block;
+    color: var(--color-white);
+}
+
+/* Conteúdo Premiações - Premiações */
+.container-premiacoes {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+}
+.conteudo-premiacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 11%;
+    margin-bottom: 5%;
+}
+
+.premios-img {
+    width: 320px;  /* Largura */
+    height: 300px; /* Altura */
+}
+
+.conteudo-premiacoes {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: auto;
+  }
+  
+  .premios-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .texto-premiacoes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para legibilidade */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ajuste conforme necessário */
+  }
+  
+  .texto-premiacoes h2 {
+    margin-top: 0;
+  }
+  
+  .texto-premiacoes p {
+    margin: 10px 0;
+  }
+  
+  .texto-premiacoes button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .texto-premiacoes button:hover {
+    background-color: #45a049;
+  }
+  
