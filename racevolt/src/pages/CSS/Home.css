@@ -17,63 +17,13 @@ p {
     font-size: 1.2rem;
 }
 
-.sub01 {    /* Versão01 Estilo Subtítulo */ 
-    color: var(--color-darkblue);
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-.linha-sub01 { /* Versão01 Estilo Linha-Subtítulo */
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    background-color: var(--color-darkblue);
-    vertical-align: middle; 
-    margin-right: 10px;
-}
-
-.tit01 {    /* Versão01 Estilo Título */
-    font-size: 2.5rem;
-    margin-left: 15%;
-}
-
-.sub02 {    /* Versão02 Estilo Subtítulo */ 
-    color: var(--color-darkblue);
-    margin-left: 40%;
-    margin-top: 5%;
-}
-
-.linha-sub02 { /* Versão02 Estilo Linha-Subtítulo */
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    background-color: var(--color-darkblue);
-    vertical-align: middle; 
-    margin-right: 10px;
-}
-
-.tit02 {    /* Versão02 Estilo Título */
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.sub-tit01 {
-    text-align: center;
-}
-
-
-
-
-
-.titulo {
-    font-size: 2.5rem;
-}
-
-.subtitulo {
+/* Versão01 Estilização (Utilizada em Introdução) - Título/Subtítulo/Linha*/
+.sub01 {    
     color: var(--color-darkblue);
     margin-bottom: 20px;
 }
-.linha-subtitulo {
+
+.linha-sub01 { 
     display: inline-block;
     width: 5%;
     height: 2px;
@@ -82,7 +32,79 @@ p {
     margin-right: 10px; 
 }
 
+.tit01 {    
+    font-size: 2.5rem;
+}
 
+/* Versão02 Estilização (Utilizada em Eventos)- Título/Subtítulo/Linha*/
+.sub02 {    
+    color: var(--color-darkblue);
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.linha-sub02 {
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit02 {    
+    font-size: 2.5rem;
+    margin-left: 15%;
+}
+
+/* Versão03 Estilização (Utilizada em Premiações)- Título/Subtítulo/Linha*/
+.sub03 {     
+    color: var(--color-darkblue);
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.linha-sub03 { 
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit03 {    
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sub-tit03 {
+    text-align: center;
+}
+
+/* Versão04 Estilização (Utilizada em Arduino)- Título/Subtítulo/Linha*/
+.sub04 {    
+    color: var(--color-white);
+    margin-left: 10%;
+}
+
+.linha-sub04 {
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-white);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit04 {   
+    color: var(--color-white);
+    font-size: 2.5rem;
+    margin-left: 15%;
+}
+
+
+/* Container - HOME */
 .container-home {
     font-family: var(--fonte-principal);
 }
@@ -141,50 +163,66 @@ p {
     margin-left: 10%;
 }
 
-/* Conteúdo Principal - Carrinhos Arduino */
-.arduino {
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* Conteúdo Principal - Projeto Arduino */
+.projeto-arduino {
     background-color: var(--color-darkblue);
+    width: 100%;
+    height: 90vh;
 }
 
-.subtitulo02 {
+.container-arduino {
+    margin-top: 5%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.texto-explicacao {
+    margin-right: 10%;
+    margin-left: 15%;
+    max-width: 40%;
+} .texto-explicacao p {
     color: var(--color-white);
-    margin-bottom: 20px;
-}
-.linha-subtitulo02 {
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    background-color: var(--color-white);
-    vertical-align: middle; 
-    margin-right: 10px; 
 }
 
-.arduino-fundo {
+.projeto-img {
+    width: 20%;
+    height: 60vh;
+}
+
+.card {
+    margin-left: 10%;
+}
+
+.card-tit {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.conteudo-arduino {
-    max-width: 20%;
-    margin-right: 10%;
-    margin-left: 5%;
-}
-
-.arduino-img {
-    max-width: 35%; /* Ajuste conforme necessário */
+.icon {
+    margin-right: 10px;
 }
 
 
-.arduino-fundo h1, h2{
+.texto-tit {
     color: var(--color-white);
+    margin-top: 5%;
 }
 
-.arduino-fundo p {
+.card-p {
     color: var(--color-white);
+    max-width: 80%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* Conteúdo Eventos - Eventos */
 .destaque {
@@ -228,7 +266,6 @@ p {
 }
 
 /* Conteúdo Anúncios - Anúncios */ 
-
 .anuncio-img {
     margin-left: 15%;
 }
@@ -237,7 +274,7 @@ p {
     position: absolute;
     top: 20%;
     left: 20%;
-    transform: translate(30%, 1700%);
+    transform: translate(30%, 1950%);
     width: 60%; 
     text-align: center;
     margin-left: 0; 
@@ -268,68 +305,59 @@ p {
 }
 
 /* Conteúdo Premiações - Premiações */
+.premiacoes {
+    margin-bottom: 10%;
+}
+
 .container-premiacoes {
     margin-top: 2%;
     display: flex;
     align-items: center;
 }
+
 .conteudo-premiacoes {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 11%;
-    margin-bottom: 5%;
 }
 
 .premios-img {
-    width: 320px;  /* Largura */
-    height: 300px; /* Altura */
+    width: 370px;  
+    height: 370px; 
 }
 
 .conteudo-premiacoes {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Ajuste conforme necessário */
     margin: auto;
-  }
-  
-  .premios-img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .texto-premiacoes {
+} 
+
+.texto-premiacoes {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para legibilidade */
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%; /* Ajuste conforme necessário */
-  }
-  
-  .texto-premiacoes h2 {
+    width: 60%; 
+    
+}
+
+.texto-premiacoes h2 {
     margin-top: 0;
-  }
-  
-  .texto-premiacoes p {
+}
+
+.texto-premiacoes p {
     margin: 10px 0;
-  }
-  
-  .texto-premiacoes button {
+    margin-bottom: 50px;
+    color: var(--color-white);
+} 
+
+.texto-premiacoes button {
+    font-weight: 700;
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--color-white);
+    color: var(--color-black);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .texto-premiacoes button:hover {
-    background-color: #45a049;
-  }
-  
+}

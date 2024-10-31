@@ -6,6 +6,9 @@ import stand from '../assets/image/icons/icon-stand.png';
 import pista from '../assets/image/icons/icon-carrinho.png';
 import premio from '../assets/image/icons/icon-premio.png';
 
+import organico from '../assets/image/icons/icon-organico.png';
+import estrategia from '../assets/image/icons/icon-estrategia.png';
+
 /* Imagens */ 
 import anuncio from '../assets/Banner-Anuncio.png'
 import kits from '../assets/image/premios/premio-arduino.png';
@@ -41,8 +44,34 @@ const Home = () => {
         </div>
       </section>
 
+      <main className="projeto-arduino">
+        <h4 className="sub04"><span className="linha-sub04"></span>POR QUE, ARDUINO?</h4>
+        <h1 className="tit04">Carrinhos Arduinos, o simples o melhor!</h1>
+          <div className="container-arduino">
+            <div className="texto-explicacao">
+              <p>Por meio da ludicidade e criatividade, elas serão imersas no desafiador mundo dos esportitas e das equipe de corrida.</p>
+              <p>As competições RaceVolt são divididas em diferentes categorias, com base em nível de habilidade e objetivos dos participantes. Os participantes têm a liberdade de projetar, construir e programar seus veículos, ajustando variáveis como velocidade, eficiência energética, e estabilidade</p>
+              <div className="card">
+                <div className="card-tit">
+                  <img src={organico} alt="Representação do Modo Orgânico" className="icon"/>
+                  <h2 className="texto-tit">Modo Orgânico</h2>
+                </div>
+                <p className="card-p">Os participantes são desafiados a projetar e construir veículos que utilizem materiais sustentáveis ou recicláveis. Durante a corrida, eles devem enfrentar obstáculos que imitam condições ambientais reais, como terrenos irregulares ou zonas de vento.</p>
+              </div>
 
-      
+              <div className="card">
+                <div className="card-tit">
+                  <img src={estrategia} alt="Representação do Estratégia" className="icon"/>
+                  <h2 className="texto-tit">Estratégia</h2>
+                </div>
+                <p className="card-p">Cada equipe deve escolher uma inovação tecnológica a ser implementada em seu veículo (ex: melhor aerodinâmica, sistema de recuperação de energia). Eles precisam justificar sua escolha e como isso se encaixa em sua estratégia de corrida.</p>
+              </div>
+            </div>
+            <img src={arduino} alt="Projeto-Carrinho Segue Linha" className="projeto-img"/>
+          </div>
+
+      </main>
+
 
       <section className="eventos">
           <h4 className="sub02"><span className="linha-sub02"></span><span className="destaque">EVENTOS</span> - PREMIAÇÕES - FUTURO</h4>
