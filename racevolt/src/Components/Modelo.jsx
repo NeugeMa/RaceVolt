@@ -4,8 +4,9 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';
-import HdriPath from '../assets/hdri.jpg';
-// import HdriPath from '../assets/hdri.hdr';
+//import HdriPath from '../assets/hdri.jpg';
+ import HdriPath from '../assets/hdri.hdr';
+
 
 
 const GLBViewer = ({ modelo, scale }) => {
@@ -138,9 +139,10 @@ const GLBViewer = ({ modelo, scale }) => {
   };
 
   return (
-    <div>
-      <div ref={mountRef} style={{ width: '100vw', height: '100vh', margin: '0 auto' }}></div>
-      <div style={{ position: 'absolute', top: '10px', left: '10px', zIndex: 1 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f5f5f5',
+}}>
+      <div ref={mountRef}  id='ref'></div>
+      <div id='control' style={{ display: 'flex',position: 'absolute', top: '6rem', gap: '2rem'}}>
         <label>Cor Primária:</label>
         <input type="color" value={primaryColor} onChange={(e) => setPrimaryColor(e.target.value)} />
 
