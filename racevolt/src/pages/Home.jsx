@@ -1,7 +1,7 @@
 import React from 'react';
-import './CSS/Home.css'; 
+import './CSS/Home.css';
 
-/* Icons */ 
+/* Icons */
 import stand from '../assets/image/icons/icon-stand.png';
 import pista from '../assets/image/icons/icon-carrinho.png';
 import premio from '../assets/image/icons/icon-premio.png';
@@ -9,22 +9,14 @@ import premio from '../assets/image/icons/icon-premio.png';
 import organico from '../assets/image/icons/icon-organico.png';
 import estrategia from '../assets/image/icons/icon-estrategia.png';
 
-/* Imagens */ 
+/* Imagens */
 import anuncio from '../assets/Banner-Anuncio.png'
 import kits from '../assets/image/premios/premio-arduino.png';
 import ticket from '../assets/image/premios/premio-ingresso.png';
 import tecno from '../assets/image/premios/premio-tecnologia.png';
-import fundo  from '../assets/RaceVolt-Banner.png';
+import fundo from '../assets/RaceVolt-Banner.png';
 import criancas from '../assets/image/criancas.jpg';
 import arduino from '../assets/image/Arduino.jpg';
-
-/* Imagens & Icons */ 
-import stand from '../assets/image/icons/icon-stand.png';
-import pista from '../assets/image/icons/icon-carrinho.png';
-import premio from '../assets/image/icons/icon-premio.png';
-import anuncio from '../assets/Banner-Anuncio.png'
-
-import kits from '../assets/image/premios/premio-arduino.png';
 
 const Home = () => {
   const handleSubmit = () => {
