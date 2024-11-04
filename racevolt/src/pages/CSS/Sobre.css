@@ -1,0 +1,197 @@
+:root {
+    --color-darkblue: #1D2130;
+    --color-darkpurple: #1E1A4E;
+    --color-purple: #3A3A72;
+    --color-lightpurple: #64749C;
+
+    --color-black: #000;
+    --color-grey: #767676;
+    --color-white: #fff; 
+
+    --fonte-titulo: "Jaro", sans-serif;
+    --fonte-principal: "Mirza", serif;
+    --fonte-roboto: "Roboto", sans-serif
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.subtitulo {
+    color: var(--color-darkblue);
+    margin-bottom: 20px;
+    font-family: var(--fonte-roboto);
+    margin-left: 5%;
+}
+.linha-subtitulo {
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+.titulo-race {
+    color: var(--color-lightpurple);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    display: block;
+}
+
+.titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    margin-left: 11.5%;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+}
+
+.racevolt {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.info-grupo {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin-top: 3%;
+    flex-direction: column;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 40%;
+    color: var(--color-darkblue);
+    text-align: justify;
+
+    span {
+        color: var(--color-lightpurple);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.imagem-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -142px;
+
+    img {
+        border-radius: 12px;
+        width: 80%;
+        height: 50%;
+    }
+}
+
+.proposta {
+    background-color: #64749C;
+    display: flex;
+    padding-top: 150px;
+
+    p, h3 {
+        color: var(--color-white);
+    }
+}
+
+.missao, .visao {
+    width: 50%;
+    padding-block: 5%;
+
+    h2 {
+        font-family: var(--fonte-roboto);
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-family: var(--fonte-roboto);
+        font-size: 20px;
+    }
+
+    p {
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        font-size: 20px;
+        max-width: 75%;
+        text-align: justify;
+    }
+}
+
+.missao {
+    margin-left: 12%;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h2 {
+        color: var(--color-black);
+        font-family: var(--fonte-principal);
+        font-weight: 700;
+        font-size: 48px;
+    }
+}
+
+.cards {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+
+
+.card-item {
+    width: 300px;
+    height: 320px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    p {
+        font-family: var(--fonte-principal);
+        color: var(--color-darkblue);
+        font-weight: 500;
+        text-align: center;
+        margin: 8px 0 0 2px;
+    }
+}
+
+.primeira-linha, .segunda-linha {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.position-top {
+    img{
+        object-position: top;
+    }
+}
+
+.rede-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+    }
+}

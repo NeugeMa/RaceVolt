@@ -145,7 +145,7 @@ const Home = () => {
       </section>
 
 
-      <section className="eventos container">
+      <section className="eventos">
           <h4 className="sub02"><span className="linha-sub02"></span><span className="destaque">EVENTOS</span> - PREMIAÇÕES - FUTURO</h4>
           <h1 className="tit02">EVENTOS DE GAMIFICAÇÃO</h1>
 
@@ -174,7 +174,7 @@ const Home = () => {
       </section>
 
       <section className="anuncio">
-        <img src={anuncio} alt="Banner Anúncio-RaceVolt" className="anuncio-img img-fluid"/>
+        <img src={anuncio} alt="Banner Anúncio-RaceVolt" className="anuncio-img"/>
           <div className="conteudo-anuncio">
               <h1>Faça seu cadastro para receber as úlimas NOVIDADES:</h1>
               <input type="text" className="anuncio-input" /> 
