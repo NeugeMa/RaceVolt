@@ -22,6 +22,9 @@ function Cabecalho() {
                             <li>
                                 <Link to="/contato" style={headerStyles}>Contato</Link>
                             </li>
+                            <li>
+                                <Link to="/premiacoes" style={headerStyles}>Premiações</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>

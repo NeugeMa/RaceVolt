@@ -1,0 +1,53 @@
+.swiper {
+  position: relative; /* Para que as setas de navegação sejam posicionadas corretamente */
+  width: 95%; /* Certifique-se que o Swiper ocupa todo o espaço disponível */
+  padding: 2.5rem;
+}
+
+
+.carrossel_cotainer {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    height: 100%;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #9AADDB;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    z-index: 10; /* Garante que as setas fiquem acima de outros elementos */
+    color: #000;
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px; /* Tamanho da seta */
+}
+
+.carrossel-img{
+
+  border-radius: 1.5rem;
+}
+
+.resgate{
+  font-size: small;
+
+}
+.premio_title{
+  margin-bottom: 0;
+
+}
+

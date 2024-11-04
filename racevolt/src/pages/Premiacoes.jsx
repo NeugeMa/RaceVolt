@@ -1,7 +1,32 @@
 import './CSS/Premiacoes.css'
+import CarrosselSection from '../Components/Carrossel/CarrosselSection';
 import premio from '../assets/image/premios/premio-carro.png';
+import kits from '../assets/image/premios/kits-arduino.png';
+import motores from '../assets/image/premios/motores-arduino.png';
+import sensores from '../assets/image/premios/sensores-arduino.png';
+import carrinho from '../assets/image/premios/kits-carrinho.png';
+import Calendario from '../Components/Calendario/Calendario';
+
+
 
 function Premiacoes() {
+
+
+        const eventos = [
+        { data: '10', mes: 'Outubro', titulo: 'Corrida dos Inovadores', local: 'Expo Center Norte, SP' },
+        { data: '15', mes: 'Novembro', titulo: 'Workshop de Engenharia', local: 'Centro de Convenções, SP' },
+        ];    
+        const slides = [
+          { title: 'KITS Arduino', content:  kits},
+          { title: 'Motores Arduino', content: motores },
+          { title: 'Sensores Arduino', content: sensores},
+          { title: 'KITS Carrinho Segue Linha', content: carrinho},
+          { title: 'KITS Arduino', content:  kits},{ title: 'Motores Arduino', content: motores },
+          { title: 'Sensores Arduino', content: sensores},
+          { title: 'KITS Carrinho Segue Linha', content: carrinho}
+       
+        ];
+      
     return (
         <div className="container">
             <h4 className="sub01">EVENTOS - PREMIAÇÕES - FUTURO</h4>
@@ -30,28 +55,44 @@ function Premiacoes() {
 
                         <p>Essa competição, conhecida como "Corrida dos Inovadores", acontece em um circuito desafiador, projetado para testar não apenas a velocidade, mas também a eficiência e a habilidade de manobra dos veículos.
                         Este ano a RaceVolt, estará presenteado um molde do Gen 2 EVO nosso carro com a aparência mais “agressiva” </p>
-                        <button>Leia Mais Sobre</button>
+                        <button className="premio-conteudo-button">Leia Mais Sobre
+                        <span className="material-symbols-outlined">arrow_downward</span>
+                        </button>
 
-                        <div className="card-info">
-                        <h3>INFORMAÇÕES</h3>
-                            <h5>DATA CORRIDA</h5>
-                            <p>10/10/2024</p>
-                        </div>
+                        <h2 className="card-info-container-title">INFORMAÇÕES</h2>
 
-                        <div className="card-info">
-                            <h5>DATA CORRIDA</h5>
-                            <p>10/10/2024</p>
+                        <div className="card-info-container"> 
+                            <div className="card-info">
+                                <h3>DATA CORRIDA</h3>
+                                <p className="card-info-data">10/10/2024</p>
+                            </div>
+
+                            <div className="card-info">
+                                <h3>LOCAL</h3>
+                                <p className="card-info-data">Expo Center Norte,SP</p>
+                            </div>
                         </div>
                     </div>
+
+                       
                     <img src={premio} alt="Molde Carro FE" className="premio-imagem" />
 
                 </div> 
             </main>
             
-            <h2> Premiações Arduino</h2>
-
-
-
+                    {/* Section 4 */}
+                    <section className='section'>
+                        <div class="title-with-line"><h2>Premiações Arduino</h2> <hr/></div>
+                    
+                         <CarrosselSection slides={slides} />
+                    </section> 
+        
+                {/* Section 5 */}
+                <section className="section section-5">
+                <div class="title-with-line"><h2>Título dos Calendários</h2> <hr/></div>
+                <Calendario eventos={eventos}/>
+                </section>
+           
         </div>
     )
 }
