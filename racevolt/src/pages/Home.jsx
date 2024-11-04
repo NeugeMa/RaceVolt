@@ -24,6 +24,7 @@ const Home = () => {
     alert('E-mail enviado com sucesso!')
     document.querySelector('.form-input').value = '';
   }
+  }
 
   return (
     <div className="container-home">
@@ -34,9 +35,18 @@ const Home = () => {
         <button className="btn01">VEJA MAIS</button>
       </div>
 
+      <div className="conteudo-fundo">
+        <h1>RACEVOLT</h1>
+        <h4>A combinação entre inovação elétrica, competições, e a<br /> diversão de trabalhar com motores e Arduino.</h4>
+        <button className="btn01">VEJA MAIS</button>
+      </div>
+
       <section className="introducao">
         <div className="introducao-fundo">
           <div className="intro-conteudo">
+            <h4 className="sub01"><span className="linha-sub01"></span>FUTURO VELOCISTAS</h4>
+            <h1 className="tit01">Experiência Inovadora para Crianças e Jovens</h1>
+            <p> Estamos em um momento crucial de transformação e precisamos ajustar nosso projeto para torná-lo mais escalável e relevante. A ideia central gira em torno da criação de uma plataforma que combina entretenimento e educação, permitindo que crianças e jovens explorem o fascinante mundo da engenharia, programação e design por meio de competições interativas com carros elétricos customizáveis. </p>
             <h4 className="sub01"><span className="linha-sub01"></span>FUTURO VELOCISTAS</h4>
             <h1 className="tit01">Experiência Inovadora para Crianças e Jovens</h1>
             <p> Estamos em um momento crucial de transformação e precisamos ajustar nosso projeto para torná-lo mais escalável e relevante. A ideia central gira em torno da criação de uma plataforma que combina entretenimento e educação, permitindo que crianças e jovens explorem o fascinante mundo da engenharia, programação e design por meio de competições interativas com carros elétricos customizáveis. </p>
@@ -54,7 +64,7 @@ const Home = () => {
             <p>As competições RaceVolt são divididas em diferentes categorias, com base em nível de habilidade e objetivos dos participantes. Os participantes têm a liberdade de projetar, construir e programar seus veículos, ajustando variáveis como velocidade, eficiência energética, e estabilidade</p>
             <div className="card">
               <div className="card-tit">
-                <img src={organico} alt="Representação do Modo Orgânico" className="icon" />
+                  <img src={organico} alt="Representação do Modo Orgânico" className="icon"/>
                 <h2 className="texto-tit">Modo Orgânico</h2>
               </div>
               <p className="card-p">Os participantes são desafiados a projetar e construir veículos que utilizem materiais sustentáveis ou recicláveis. Durante a corrida, eles devem enfrentar obstáculos que imitam condições ambientais reais, como terrenos irregulares ou zonas de vento.</p>
@@ -62,13 +72,13 @@ const Home = () => {
 
             <div className="card">
               <div className="card-tit">
-                <img src={estrategia} alt="Representação do Estratégia" className="icon" />
+                  <img src={estrategia} alt="Representação do Estratégia" className="icon"/>
                 <h2 className="texto-tit">Estratégia</h2>
               </div>
               <p className="card-p">Cada equipe deve escolher uma inovação tecnológica a ser implementada em seu veículo (ex: melhor aerodinâmica, sistema de recuperação de energia). Eles precisam justificar sua escolha e como isso se encaixa em sua estratégia de corrida.</p>
             </div>
           </div>
-          <img src={arduino} alt="Projeto-Carrinho Segue Linha" className="projeto-img" />
+            <img src={arduino} alt="Projeto-Carrinho Segue Linha" className="projeto-img"/>
         </div>
 
       </main>
