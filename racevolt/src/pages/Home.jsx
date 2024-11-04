@@ -24,7 +24,6 @@ const Home = () => {
     alert('E-mail enviado com sucesso!')
     document.querySelector('.form-input').value = '';
   }
-  }
 
   return (
     <div className="container-home">
@@ -131,7 +130,7 @@ const Home = () => {
             <div class="texto-premiacoes">
               <h2>Kits Arduino</h2>
               <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <Link to="/">
+              <Link to="/premios">
                 <button>VEJA MAIS</button>
               </Link>
             </div>
@@ -142,7 +141,7 @@ const Home = () => {
             <div class="texto-premiacoes">
               <h2>Vouchers/ Ingressos</h2>
               <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <Link to="/">
+              <Link to="/premios">
                 <button>VEJA MAIS</button>
               </Link>
             </div>
@@ -153,7 +152,7 @@ const Home = () => {
             <div class="texto-premiacoes">
               <h2>Produtos Tecnológicos</h2>
               <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <Link to="/">
+              <Link to="/premios">
                 <button>VEJA MAIS</button>
               </Link>
             </div>
