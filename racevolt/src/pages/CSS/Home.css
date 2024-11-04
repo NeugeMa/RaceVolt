@@ -17,15 +17,13 @@ p {
     font-size: 1.2rem;
 }
 
-.titulo {
-    font-size: 2.5rem;
-}
-
-.subtitulo {
+/* Versão01 Estilização (Utilizada em Introdução) - Título/Subtítulo/Linha*/
+.sub01 {    
     color: var(--color-darkblue);
     margin-bottom: 20px;
 }
-.linha-subtitulo {
+
+.linha-sub01 { 
     display: inline-block;
     width: 5%;
     height: 2px;
@@ -34,15 +32,86 @@ p {
     margin-right: 10px; 
 }
 
+.tit01 {    
+    font-size: 2.5rem;
+}
 
-/* */
+/* Versão02 Estilização (Utilizada em Eventos)- Título/Subtítulo/Linha*/
+.sub02 {    
+    color: var(--color-darkblue);
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.linha-sub02 {
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit02 {    
+    font-size: 2.5rem;
+    margin-left: 15%;
+}
+
+/* Versão03 Estilização (Utilizada em Premiações)- Título/Subtítulo/Linha*/
+.sub03 {     
+    color: var(--color-darkblue);
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+.linha-sub03 { 
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-darkblue);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit03 {    
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sub-tit03 {
+    text-align: center;
+}
+
+/* Versão04 Estilização (Utilizada em Arduino)- Título/Subtítulo/Linha*/
+.sub04 {    
+    color: var(--color-white);
+    margin-left: 10%;
+}
+
+.linha-sub04 {
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    background-color: var(--color-white);
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.tit04 {   
+    color: var(--color-white);
+    font-size: 2.5rem;
+    margin-left: 15%;
+}
+
+
+/* Container - HOME */
 .container-home {
     font-family: var(--fonte-principal);
 }
 
 .fundo {
     width: 100%;
-    height: auto;
+    height: 80vh;
 }
 
 .conteudo-fundo {
@@ -94,48 +163,191 @@ p {
     margin-left: 10%;
 }
 
-/* Conteúdo Principal - Carrinhos Arduino */
-.arduino {
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* Conteúdo Principal - Projeto Arduino */
+.projeto-arduino {
     background-color: var(--color-darkblue);
+    width: 100%;
+    height: 90vh;
 }
 
-.subtitulo02 {
+.container-arduino {
+    margin-top: 5%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.texto-explicacao {
+    margin-right: 10%;
+    margin-left: 15%;
+    max-width: 40%;
+} .texto-explicacao p {
     color: var(--color-white);
-    margin-bottom: 20px;
-}
-.linha-subtitulo02 {
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    background-color: var(--color-white);
-    vertical-align: middle; 
-    margin-right: 10px; 
 }
 
-.arduino-fundo {
+.projeto-img {
+    width: 20%;
+    height: 60vh;
+}
+
+.card {
+    margin-left: 10%;
+}
+
+.card-tit {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.conteudo-arduino {
-    max-width: 20%;
-    margin-right: 10%;
-    margin-left: 5%;
-}
-
-.arduino-img {
-    max-width: 35%; /* Ajuste conforme necessário */
+.icon {
+    margin-right: 10px;
 }
 
 
-.arduino-fundo h1, h2{
+.texto-tit {
+    color: var(--color-white);
+    margin-top: 5%;
+}
+
+.card-p {
+    color: var(--color-white);
+    max-width: 80%;
+}
+
+
+/* Conteúdo Eventos - Eventos */
+.destaque {
+    text-decoration: overline;
+}
+
+.container-eventos {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 11%;
+    margin-bottom: 5%;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-darkpurple);
+    border-radius: 50%;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; 
+}
+
+.img-circulo {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.msg-circulo {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/* Conteúdo Anúncios - Anúncios */ 
+.anuncio-img {
+    margin-left: 15%;
+}
+
+.conteudo-anuncio {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(30%, 1950%);
+    width: 60%; 
+    text-align: center;
+    margin-left: 0; 
+} 
+
+.anuncio-input {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    background-color: transparent;
+    padding: 10px 40px;
+}
+
+.anuncio-button {
+    background-color: var(--color-white);
+    border: none;
+    padding: 11px 20px;
+    cursor: pointer;
+}
+
+.conteudo-anuncio h1 {
+    font-size: 2rem;
     color: var(--color-white);
 }
 
-.arduino-fundo p {
+.conteudo-anuncio span {
+    display: block;
     color: var(--color-white);
 }
 
+/* Conteúdo Premiações - Premiações */
+.premiacoes {
+    margin-bottom: 10%;
+}
+
+.container-premiacoes {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-premiacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 11%;
+}
+
+.premios-img {
+    width: 370px;  
+    height: 370px; 
+}
+
+.conteudo-premiacoes {
+    position: relative;
+    width: 100%;
+    margin: auto;
+} 
+
+.texto-premiacoes {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 60%; 
+    
+}
+
+.texto-premiacoes h2 {
+    margin-top: 0;
+}
+
+.texto-premiacoes p {
+    margin: 10px 0;
+    margin-bottom: 50px;
+    color: var(--color-white);
+} 
+
+.texto-premiacoes button {
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
