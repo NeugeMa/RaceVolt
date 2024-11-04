@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import reportWebVitals from "./reportWebVitals";
 import Car from "./pages/Carro";
+import PageNotFound from './pages/PageNotFound'
+// import Premios from "./pages/Premios";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
       { path: "contato", element: <Contato /> },
       { path: "sobre", element: <Sobre /> },
       { path: "car", element: <Car /> },
+      { path: '*', element: <PageNotFound /> },
+      // {path: "premios", element: <Premios />},
 
     ],
   },

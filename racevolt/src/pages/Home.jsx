@@ -1,5 +1,6 @@
 import React from 'react';
 import './CSS/Home.css';
+import { Link } from "react-router-dom";
 
 /* Icons */
 import stand from '../assets/image/icons/icon-stand.png';
@@ -33,9 +34,18 @@ const Home = () => {
         <button className="btn01">VEJA MAIS</button>
       </div>
 
+      <div className="conteudo-fundo">
+        <h1>RACEVOLT</h1>
+        <h4>A combinação entre inovação elétrica, competições, e a<br /> diversão de trabalhar com motores e Arduino.</h4>
+        <button className="btn01">VEJA MAIS</button>
+      </div>
+
       <section className="introducao">
         <div className="introducao-fundo">
           <div className="intro-conteudo">
+            <h4 className="sub01"><span className="linha-sub01"></span>FUTURO VELOCISTAS</h4>
+            <h1 className="tit01">Experiência Inovadora para Crianças e Jovens</h1>
+            <p> Estamos em um momento crucial de transformação e precisamos ajustar nosso projeto para torná-lo mais escalável e relevante. A ideia central gira em torno da criação de uma plataforma que combina entretenimento e educação, permitindo que crianças e jovens explorem o fascinante mundo da engenharia, programação e design por meio de competições interativas com carros elétricos customizáveis. </p>
             <h4 className="sub01"><span className="linha-sub01"></span>FUTURO VELOCISTAS</h4>
             <h1 className="tit01">Experiência Inovadora para Crianças e Jovens</h1>
             <p> Estamos em um momento crucial de transformação e precisamos ajustar nosso projeto para torná-lo mais escalável e relevante. A ideia central gira em torno da criação de uma plataforma que combina entretenimento e educação, permitindo que crianças e jovens explorem o fascinante mundo da engenharia, programação e design por meio de competições interativas com carros elétricos customizáveis. </p>
@@ -73,41 +83,41 @@ const Home = () => {
       </main>
 
       <section className="eventos">
-          <h4 className="sub01"><span className="linha-sub01"></span><span className="destaque">EVENTOS</span> - PREMIAÇÕES - FUTURO</h4>
-          <h1 className="tit01">EVENTOS DE GAMIFICAÇÃO</h1>
+        <h4 className="sub01"><span className="linha-sub01"></span><span className="destaque">EVENTOS</span> - PREMIAÇÕES - FUTURO</h4>
+        <h1 className="tit01">EVENTOS DE GAMIFICAÇÃO</h1>
 
-          <div className="container-eventos">
-            <div className="conteudo-eventos">
-              <div className="circulo">
-                <img src={stand} alt="Stand" className='img-circulo'/>
-              </div>
-              <p className="msg-circulo">Stand em polos comerciais populares</p>
+        <div className="container-eventos">
+          <div className="conteudo-eventos">
+            <div className="circulo">
+              <img src={stand} alt="Stand" className='img-circulo' />
             </div>
+            <p className="msg-circulo">Stand em polos comerciais populares</p>
+          </div>
 
-            <div className="conteudo-eventos">
-              <div className="circulo">
-                <img src={pista} alt="Pista de Corrida" className='img-circulo'/>
-              </div>
-              <p className="msg-circulo">Personalização de Carrinhos</p>
+          <div className="conteudo-eventos">
+            <div className="circulo">
+              <img src={pista} alt="Pista de Corrida" className='img-circulo' />
             </div>
+            <p className="msg-circulo">Personalização de Carrinhos</p>
+          </div>
 
-            <div className="conteudo-eventos">
-              <div className="circulo">
-                <img src={premio} alt="Stand" className='img-circulo'/>
-              </div>
-              <p className="msg-circulo">Competição concorrendo a prêmios</p>
+          <div className="conteudo-eventos">
+            <div className="circulo">
+              <img src={premio} alt="Stand" className='img-circulo' />
             </div>
-          </div> 
+            <p className="msg-circulo">Competição concorrendo a prêmios</p>
+          </div>
+        </div>
       </section>
 
       <section className="anuncio">
-        <img src={anuncio} alt="Banner Anúncio-RaceVolt" className="anuncio-img"/>
-          <div className="conteudo-anuncio">
-              <h1>Faça seu cadastro para receber as úlimas NOVIDADES:</h1>
-              <input type="text" className="anuncio-input" /> 
-              <button className="anuncio-button" onClick={handleSubmit}>EMAIL:</button>
-                <span>ESTE E-MAIL DEVE SER DE SEU RESPONSÁVEL LEGAL</span>
-          </div>
+        <img src={anuncio} alt="Banner Anúncio-RaceVolt" className="anuncio-img" />
+        <div className="conteudo-anuncio">
+          <h1>Faça seu cadastro para receber as úlimas NOVIDADES:</h1>
+          <input type="text" className="anuncio-input" />
+          <button className="anuncio-button" onClick={handleSubmit}>EMAIL:</button>
+          <span>ESTE E-MAIL DEVE SER DE SEU RESPONSÁVEL LEGAL</span>
+        </div>
       </section>
       <section className="premiacoes">
         <h4 className="sub03"><span className="linha-sub03"></span>EVENTOS - <span className="destaque">PREMIAÇÕES</span> - FUTURO</h4>
@@ -116,29 +126,35 @@ const Home = () => {
 
         <div className="container-premiacoes">
           <div className="conteudo-premiacoes">
-                <img src={kits} alt="Premiação Kits-Arduinos" className="premios-img"/>
+            <img src={kits} alt="Premiação Kits-Arduinos" className="premios-img" />
             <div class="texto-premiacoes">
               <h2>Kits Arduino</h2>
               <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <button>VEJA MAIS</button>
+              <Link to="/premios">
+                <button>VEJA MAIS</button>
+              </Link>
             </div>
           </div>
 
           <div className="conteudo-premiacoes">
-                <img src={ticket} alt="Vouchers/ Ingressos" className="premios-img"/>
+            <img src={ticket} alt="Vouchers/ Ingressos" className="premios-img" />
             <div class="texto-premiacoes">
               <h2>Vouchers/ Ingressos</h2>
               <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <button>VEJA MAIS</button>
+              <Link to="/premios">
+                <button>VEJA MAIS</button>
+              </Link>
             </div>
           </div>
 
           <div className="conteudo-premiacoes">
-                <img src={tecno} alt="Produtos Tecnológicos" className="premios-img"/>
+            <img src={tecno} alt="Produtos Tecnológicos" className="premios-img" />
             <div class="texto-premiacoes">
               <h2>Produtos Tecnológicos</h2>
               <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <button>VEJA MAIS</button>
+              <Link to="/premios">
+                <button>VEJA MAIS</button>
+              </Link>
             </div>
           </div>
         </div>
