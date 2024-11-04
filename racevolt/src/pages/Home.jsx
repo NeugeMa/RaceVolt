@@ -69,7 +69,81 @@ const Home = () => {
             </div>
             <img src={arduino} alt="Projeto-Carrinho Segue Linha" className="projeto-img"/>
           </div>
+
       </main>
+
+      <section className="eventos">
+          <h4 className="sub01"><span className="linha-sub01"></span><span className="destaque">EVENTOS</span> - PREMIAÇÕES - FUTURO</h4>
+          <h1 className="tit01">EVENTOS DE GAMIFICAÇÃO</h1>
+
+          <div className="container-eventos">
+            <div className="conteudo-eventos">
+              <div className="circulo">
+                <img src={stand} alt="Stand" className='img-circulo'/>
+              </div>
+              <p className="msg-circulo">Stand em polos comerciais populares</p>
+            </div>
+
+            <div className="conteudo-eventos">
+              <div className="circulo">
+                <img src={pista} alt="Pista de Corrida" className='img-circulo'/>
+              </div>
+              <p className="msg-circulo">Personalização de Carrinhos</p>
+            </div>
+
+            <div className="conteudo-eventos">
+              <div className="circulo">
+                <img src={premio} alt="Stand" className='img-circulo'/>
+              </div>
+              <p className="msg-circulo">Competição concorrendo a prêmios</p>
+            </div>
+          </div> 
+      </section>
+
+      <section className="anuncio">
+        <img src={anuncio} alt="Banner Anúncio-RaceVolt" className="anuncio-img"/>
+          <div className="conteudo-anuncio">
+              <h1>Faça seu cadastro para receber as úlimas NOVIDADES:</h1>
+              <input type="text" className="anuncio-input" /> 
+              <button className="anuncio-button" onClick={handleSubmit}>EMAIL:</button>
+                <span>ESTE E-MAIL DEVE SER DE SEU RESPONSÁVEL LEGAL</span>
+          </div>
+      </section>
+
+      <section className="premiacoes">
+        <h4 className="sub02"><span className="linha-sub02"></span>EVENTOS - <span className="destaque">PREMIAÇÕES</span> - FUTURO</h4>
+        <h1 className="tit02">PREMIAÇÕES</h1>
+            <h3 className="sub-tit01">VEJA QUAIS OS PRÊMIOS DISPONIVÉIS ATUALMENTE</h3>
+
+            <div className="container-premiacoes">
+              <div className="conteudo-premiacoes">
+                <img src={kits} alt="Premiação Kits-Arduinos" className="premios-img"/>
+                <div class="texto-premiacoes">
+                    <h2>Kits Arduino</h2>
+                    <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
+                    <button>VEJA MAIS</button>
+                  </div>
+              </div>
+
+              <div className="conteudo-premiacoes">
+                <div className="quadrado"></div>
+              </div>
+
+              <div className="conteudo-premiacoes">
+                <div className="quadrado"></div>
+              </div>
+
+
+
+
+
+
+
+
+            </div>
+
+      </section>
+
 
       <section className="eventos">
           <h4 className="sub02"><span className="linha-sub02"></span><span className="destaque">EVENTOS</span> - PREMIAÇÕES - FUTURO</h4>
@@ -120,7 +194,7 @@ const Home = () => {
                 <div class="texto-premiacoes">
                     <h2>Kits Arduino</h2>
                     <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-                    <button>VEJA MAIS</button>
+                    <button >VEJA MAIS</button>
                   </div>
               </div>
 
@@ -129,7 +203,7 @@ const Home = () => {
                 <div class="texto-premiacoes">
                     <h2>Vouchers/ Ingressos</h2>
                     <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-                    <button>VEJA MAIS</button>
+                    <button >VEJA MAIS</button>
                   </div>
               </div>
 
@@ -138,7 +212,7 @@ const Home = () => {
                 <div class="texto-premiacoes">
                     <h2>Produtos Tecnológicos</h2>
                     <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-                    <button>VEJA MAIS</button>
+                    <button >VEJA MAIS</button>
                   </div>
               </div>
             </div>

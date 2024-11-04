@@ -16,6 +16,21 @@
 p {
     font-size: 1.2rem;
 }
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    /* padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5); */
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Versão01 Estilização (Utilizada em Introdução) - Título/Subtítulo/Linha*/
 .sub01 {    
@@ -39,7 +54,7 @@ p {
 /* Versão02 Estilização (Utilizada em Eventos)- Título/Subtítulo/Linha*/
 .sub02 {    
     color: var(--color-darkblue);
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 5%;
 }
 
@@ -111,7 +126,7 @@ p {
 
 .fundo {
     width: 100%;
-    height: 80vh;
+    height: auto;
 }
 
 .conteudo-fundo {
@@ -223,14 +238,13 @@ p {
     margin-top: 5%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .conteudo-eventos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 11%;
-    margin-bottom: 5%;
 }
 
 .circulo {
@@ -256,8 +270,13 @@ p {
 }
 
 /* Conteúdo Anúncios - Anúncios */ 
+.anuncio{
+display: flex;
+justify-content: center;
+}
+
 .anuncio-img {
-    margin-left: 15%;
+    max-width: 80%;
 }
 
 .conteudo-anuncio {
@@ -309,7 +328,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 11%;
+    /* margin-left: 11%; */
 }
 
 .premios-img {
