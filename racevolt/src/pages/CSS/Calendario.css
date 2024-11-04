@@ -1,0 +1,140 @@
+.section-5 {
+    padding: 2rem;
+  }
+
+  .title-with-line {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .title-with-line hr {
+    width: 50px; /* Ajuste o tamanho da linha */
+    margin-left: 20px;
+  }
+  
+  .card-calendario {
+    display: flex;
+   /* Alinha os cards verticalmente */
+  }
+
+  .evento-card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .evento-card {
+    display: flex;
+    align-items: flex-start; /* Alinha o conteúdo no início */
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #9AADDB;
+    width: 45%;
+  }
+  
+  .data {
+    margin-right: 20px; /* Espaço entre a data e o conteúdo do evento */
+  }
+  
+  .data h2 {
+    font-size: 3.5em; /* Tamanho da data */
+    margin: 0;
+  }
+  
+  .data span {
+    display: block;
+    font-size: 0.8em; /* Tamanho do mês */
+  }
+  
+  .proximo-evento {
+    display: flex; 
+    align-items: center; /* Alinha verticalmente o texto e o hr */
+    gap: 10px; /* Espaçamento entre os elementos */
+  }
+  
+  .proximo-evento h4 {
+    margin: 0; /* Remove margem para garantir que o título não quebre a linha */
+  }
+  
+  .proximo-evento hr {
+    width: 50px; /* Tamanho da linha */
+    margin: 0; /* Remove margem para evitar quebra de linha */
+  }
+  
+  .detalhes-evento h3 {
+    margin: 5px 0 0 0; /* Margens do título do evento */
+  }
+  
+  .local {
+    color: white; /* Cor do texto do local */
+    margin: 5px 0 0 0; /* Margem para o local */
+  }
+  
+
+  /* Estilos para os calendários */
+  .card-calendario {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 20px 0;
+    height: 20dvh;
+  }
+  
+  .calendario {
+    background-color: #9AADDB;;
+    color: white;
+    padding: 1rem;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para os calendários */
+    transition: transform 0.3s ease; /* Suavização para hover */
+  }
+  
+  .calendario:hover {
+    transform: scale(1.05); /* Efeito de hover para destacar o calendário */
+  }
+
+  #hr-calendario{
+    border: 1px solid black;
+  }
+
+  .evento-card {
+    position: relative; 
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #9AADDB;
+    width: 45%;
+  }
+  
+  .seta-btn {
+    top: 10px; 
+    right: 10px; 
+    background-color: white;
+    border: none;
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .seta {
+    font-size: 1.5em; 
+    color: #007bff; }
+  
+  .passar-evento {
+    background-color: transparent; 
+    border: none;
+    cursor: pointer; 
+    margin-left: auto; 
+    font-size: 1.2em; 
+  }
+  
+  .passador{
+    align-self: center;
+    margin-left: 30%;
+  }

@@ -1,0 +1,191 @@
+:root {
+    --color-darkblue: #1d2130;
+    --color-darkpurple: #1e1a4e;
+    --color-purple: #3a3a72;
+    --color-lightpurple: #64749c;
+  
+    --color-black: #000;
+    --color-grey: #181818;
+    --colo-light-grey: #767676;
+    --color-white: #fff;
+    --color-text-gray: #b8b9bc;
+  
+    --fonte-titulo: "Jaro", sans-serif;
+    --fonte-principal: "Mirza", serif;
+}
+
+
+.container {
+    font-family: var(--fonte-principal); 
+}
+
+/* Versão01 Estilização (Utilizada em Premiações)- Título/Subtítulo/Linha*/
+.sub01 {
+    text-align: center;
+}
+.tit01 {    
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sub-tit01 {
+    color: var(--color-grey);
+    text-align: center;
+}
+
+/* Introdução Premiações */
+/* Versão02 Estilização (Utilizada em Overview - Premiações) */
+.sub02 {
+    position: relative;
+    display: inline-block;
+}
+
+.linha-sub02 {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-lightpurple);
+}
+
+.introducao {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    padding: 1.5rem;   
+}
+
+.card-introducao {
+    flex: 1;
+    padding: 20px;
+}
+
+.card-introducao h1 {
+    font-size: 2.8rem;
+}
+
+/* Prêmio Ano */
+.premio {
+    background-color: var(--color-grey);    
+    width: 90vw;
+    height: 80vh;
+    margin-left: calc(100% - 90vw); 
+    border-radius: 20px 0 0 20px;
+    margin-bottom: 2rem;
+}
+
+.card-premio {
+  
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+
+.premio-imagem {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.premio-conteudo {
+    margin-left: 2rem;
+    margin-top: 50px;
+    padding: 2%;
+    width: 60%;
+    color: var(--color-white);
+    
+}
+
+.card-info-container{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.premio-conteudo-button{
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    background-color: var(--colo-light-grey);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.card-info-data{
+    font-size:medium;
+    color: var(--color-text-gray);
+}
+
+.card-info-container-title{
+    margin-top: 2rem 0 0 }
+
+  /* Estilos gerais para as seções */
+.section {
+  
+    padding:0 2rem;
+  }
+  .title-with-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem 1rem;
+}
+
+.title-with-line h2 {
+    font-size: 2em;
+    padding-right: 10px; /* Espaço entre o título e a linha */
+    white-space: nowrap; /* Impede que o título quebre em várias linhas */
+}
+
+.title-with-line hr {
+    flex-grow: 1; /* Faz a linha crescer para ocupar o espaço restante */
+    border: none;
+    border-top: 2px solid #000; /* Estilo da linha */
+}
+  
+  .section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section hr {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #007bff; /* Linha de separação em azul para destaque */
+  }
+  
+  /* Estilos do carrossel */
+  .carrossel {
+    width: 100%;
+    height: 200px;
+    background-color: #e9ecef; /* Cor de fundo para o carrossel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+  }
+  
+  .carrossel p {
+    font-size: 18px;
+    color: #343a40;
+  }
+  
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .card-calendario {
+      flex-direction: column;
+    }
+  
+    .calendario {
+      margin: 10px 0;
+    }
+  }
+  
