@@ -4,10 +4,10 @@ import premio from '../assets/image/premios/premio-carro.png';
 import kits from '../assets/image/premios/kits-arduino.png';
 import motores from '../assets/image/premios/motores-arduino.png';
 import sensores from '../assets/image/premios/sensores-arduino.png';
-import carrinho from '../assets/image/premios/kits-carrinho.png';
+import carrinho from '../assets/image/premios/premio-carroarduino.png';
 import Calendario from '../Components/Calendario/Calendario';
-import tecnologia from '../assets/image/premios/premio-tecnologia.png'; 
-import ingresso from '../assets/image/premios/premio-ingresso.png'; 
+import tecnologico from '../assets/image/premios/premio-tecnologico.png'; 
+import tickets from '../assets/image/premios/premio-ticket.png'; 
 
 
 function Premiacoes() {
@@ -22,8 +22,8 @@ function Premiacoes() {
           { title: 'Motores Arduino', content: motores },
           { title: 'Sensores Arduino', content: sensores},
           { title: 'KITS Carrinho Segue Linha', content: carrinho},
-          { title: 'Par de Ingressos', content:  ingressos},
-          { title: 'Gadgets', content: tecnologia}
+          { title: 'Ingressos', content:  tickets},
+          { title: 'Produtos Tecnologicos', content: tecnologico}
         ];
       
     return (
