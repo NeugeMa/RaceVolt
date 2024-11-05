@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bg-db {
+  background-color: #1D2130;
+}
+
+.bg-i1{
+  background-image: url(./assets/image/premios/kits-arduino.png);
+}
+.bg-i2{
+  background-image: url(./assets/image/premios/premio-ingresso.png);
+}
+.bg-i3{
+  background-image: url(./assets/image/premios/premio-tecnologia.png);
+}
+.bg-a{
+  background-image: url(./assets/Banner-Anuncio.png);
+}

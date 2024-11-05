@@ -18,7 +18,7 @@ import fundo from '../assets/RaceVolt-Banner.png';
 import criancas from '../assets/image/criancas.jpg';
 import arduino from '../assets/image/Arduino.jpg';
 
-const Home = () => {
+export default function Home() {
   const handleSubmit = () => {
     alert('E-mail enviado com sucesso!')
     document.querySelector('.form-input').value = '';
@@ -53,7 +53,7 @@ const Home = () => {
             <p>As competições RaceVolt são divididas em diferentes categorias, com base em nível de habilidade e objetivos dos participantes. Os participantes têm a liberdade de projetar, construir e programar seus veículos, ajustando variáveis como velocidade, eficiência energética, e estabilidade</p>
             <div className="card">
               <div className="card-tit">
-                  <img src={organico} alt="Representação do Modo Orgânico" className="icon"/>
+                <img src={organico} alt="Representação do Modo Orgânico" className="icon" />
                 <h2 className="texto-tit">Modo Orgânico</h2>
               </div>
               <p className="card-p">Os participantes são desafiados a projetar e construir veículos que utilizem materiais sustentáveis ou recicláveis. Durante a corrida, eles devem enfrentar obstáculos que imitam condições ambientais reais, como terrenos irregulares ou zonas de vento.</p>
@@ -61,84 +61,80 @@ const Home = () => {
 
             <div className="card">
               <div className="card-tit">
-                  <img src={estrategia} alt="Representação do Estratégia" className="icon"/>
+                <img src={estrategia} alt="Representação do Estratégia" className="icon" />
                 <h2 className="texto-tit">Estratégia</h2>
               </div>
               <p className="card-p">Cada equipe deve escolher uma inovação tecnológica a ser implementada em seu veículo (ex: melhor aerodinâmica, sistema de recuperação de energia). Eles precisam justificar sua escolha e como isso se encaixa em sua estratégia de corrida.</p>
             </div>
           </div>
-            <img src={arduino} alt="Projeto-Carrinho Segue Linha" className="projeto-img"/>
+          <img src={arduino} alt="Projeto-Carrinho Segue Linha" className="projeto-img" />
         </div>
-
       </main>
 
-      <section className="eventos">
-          <h4 className="sub01"><span className="linha-sub01"></span><span className="destaque">EVENTOS</span> - PREMIAÇÕES - FUTURO</h4>
-          <h1 className="tit01">EVENTOS DE GAMIFICAÇÃO</h1>
-
-          <div className="container-eventos">
-            <div className="conteudo-eventos">
-              <div className="circulo">
-                <img src={stand} alt="Stand" className='img-circulo'/>
-              </div>
-              <p className="msg-circulo">Stand em polos comerciais populares</p>
+      <section className="p-4 bg-white shadow-md rounded-lg">
+        <h4 className="text-lg font-semibold mb-2 border-l-4 border-green-500 pl-2">EVENTOS - PREMIAÇÕES - FUTURO</h4>
+        <h1 className="text-2xl md:text-4xl font-bold mb-4">EVENTOS DE GAMIFICAÇÃO</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-db rounded-full flex items-center justify-center overflow-hidden">
+              <img src={stand} alt="Stand" className="w-full h-full object-cover" />
             </div>
+            <p className="mt-2 text-center">Stand em polos comerciais populares</p>
+          </div>
 
-            <div className="conteudo-eventos">
-              <div className="circulo">
-                <img src={pista} alt="Pista de Corrida" className='img-circulo'/>
-              </div>
-              <p className="msg-circulo">Personalização de Carrinhos</p>
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-db rounded-full flex items-center justify-center overflow-hidden">
+              <img src={pista} alt="Pista de Corrida" className="w-full h-full object-cover" />
             </div>
+            <p className="mt-2 text-center">Personalização de Carrinhos</p>
+          </div>
 
-            <div className="conteudo-eventos">
-              <div className="circulo">
-                <img src={premio} alt="Stand" className='img-circulo'/>
-              </div>
-              <p className="msg-circulo">Competição concorrendo a prêmios</p>
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-db rounded-full flex items-center justify-center overflow-hidden">
+              <img src={premio} alt="Premiação" className="w-full h-full object-cover" />
             </div>
-          </div> 
+            <p className="mt-2 text-center">Competição concorrendo a prêmios</p>
+          </div>
+        </div>
       </section>
 
-      <section className="anuncio">
-        <img src={anuncio} alt="Banner Anúncio-RaceVolt" className="anuncio-img"/>
-          <div className="conteudo-anuncio">
-              <h1>Faça seu cadastro para receber as úlimas NOVIDADES:</h1>
-              <input type="text" className="anuncio-input" /> 
-              <button className="anuncio-button" onClick={handleSubmit}>EMAIL:</button>
-                <span>ESTE E-MAIL DEVE SER DE SEU RESPONSÁVEL LEGAL</span>
-          </div>
+      <section className="flex flex-col md:flex-row items-center gap-4 p-4 bg-gray-100 rounded-lg bg-cover bg-a bg-center">
+        <div className="w-full md:w-1/2 rounded-lg" />
+        <div className="max-w-full py-40  md:w-1/2 p-5">
+          <h1 className="text-xl font-bold mb-2">Faça seu cadastro para receber as últimas NOVIDADES:</h1>
+          <input type="text" className="w-full p-2 border border-gray-300 rounded mb-2" placeholder="Seu email" />
+          <button className="w-full mt-2 bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">EMAIL</button>
+          <span className="block mt-2 text-sm text-gray-600">ESTE E-MAIL DEVE SER DE SEU RESPONSÁVEL LEGAL</span>
+        </div>
       </section>
-      <section className="premiacoes">
-        <h4 className="sub03"><span className="linha-sub03"></span>EVENTOS - <span className="destaque">PREMIAÇÕES</span> - FUTURO</h4>
-        <h1 className="tit03">PREMIAÇÕES</h1>
-        <h3 className="sub-tit03">VEJA QUAIS OS PRÊMIOS DISPONIVÉIS ATUALMENTE</h3>
 
-        <div className="container-premiacoes">
-          <div className="conteudo-premiacoes">
-                <img src={kits} alt="Premiação Kits-Arduinos" className="premios-img"/>
-            <div class="texto-premiacoes">
-              <h2>Kits Arduino</h2>
-              <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <button>VEJA MAIS</button>
+      <section className="p-4 shadow-md rounded-lg">
+        <h4 className="text-lg font-semibold mb-2 border-l-4 border-red-500 pl-2">EVENTOS - PREMIAÇÕES - FUTURO</h4>
+        <h1 className="text-2xl md:text-4xl font-bold mb-4">PREMIAÇÕES</h1>
+        <h3 className="text-lg font-semibold mb-4">VEJA QUAIS OS PRÊMIOS DISPONÍVEIS ATUALMENTE</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-gray-200 rounded-lg p-6 bg-cover bg-i1">
+            <div>
+              <h2 className="text-xl font-bold mb-2 text-white">Kits Arduino</h2>
+              <p className='text-white'>As premiações nas competições RaceVolt podem ser diversas e estimulantes...</p>
+              <button className="mt-2 bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">VEJA MAIS</button>
             </div>
           </div>
 
-          <div className="conteudo-premiacoes">
-                <img src={ticket} alt="Vouchers/ Ingressos" className="premios-img"/>
-            <div class="texto-premiacoes">
-              <h2>Vouchers/ Ingressos</h2>
-              <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <button>VEJA MAIS</button>
+                        <div className="bg-gray-200 bg-cover bg-i2 rounded-lg p-4">
+                            
+                            <div>
+                                <h2 className="text-xl font-bold mb-2 text-white">Vouchers/Ingressos</h2>
+                                <p className='text-white'>As premiações nas competições RaceVolt podem ser diversas e estimulantes...</p>
+              <button className="mt-2 bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">VEJA MAIS</button>
             </div>
           </div>
 
-          <div className="conteudo-premiacoes">
-                <img src={tecno} alt="Produtos Tecnológicos" className="premios-img"/>
-            <div class="texto-premiacoes">
-              <h2>Produtos Tecnológicos</h2>
-              <p>As premiações nas competições RaceVolt podem ser diversas e estimulantes, incentivando a criatividade e o espírito de equipe entre os participantes. Além dos tradicionais troféus e medalhas, as equipes podem receber prêmios como:</p>
-              <button>VEJA MAIS</button>
+          <div className="bg-gray-200 bg-cover bg-i3 rounded-lg p-4">
+            <div className='bg-a'>
+              <h2 className="text-xl font-bold mb-2 text-white">Produtos Tecnológicos</h2>
+              <p className='text-white'>As premiações nas competições RaceVolt podem ser diversas e estimulantes...</p>
+              <button className="mt-2 bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">VEJA MAIS</button>
             </div>
           </div>
         </div>
@@ -146,5 +142,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
