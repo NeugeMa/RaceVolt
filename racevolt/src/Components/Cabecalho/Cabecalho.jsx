@@ -9,9 +9,9 @@ function Cabecalho() {
 
     return (
         <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8 sticky top-0 bg-white z-50 shadow-md">
-            <h1 className="text-4xl font-bold text-center py-4">RACEVOLT</h1>
             <div className="flex h-16 items-center justify-between">
-                {/* Mobile Menu Button */}
+            <h1 className="text-4xl font-bold text-center py-4">RACEVOLT</h1>
+                {/* Mobile Menu Button 
                 <div className="md:hidden flex items-center">
                     <button className="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                         <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -19,6 +19,7 @@ function Cabecalho() {
                         </svg>
                     </button>
                 </div>
+                        */}
 
                 {/* Navigation Links */}
                 <nav className="hidden md:flex space-x-4">
