@@ -33,16 +33,20 @@ export default function Home() {
         <button className="btn01">VEJA MAIS</button>
       </div>
 
-      <section className="introducao">
-        <div className="introducao-fundo">
-          <div className="intro-conteudo">
-            <h4 className="sub01"><span className="linha-sub01"></span>FUTURO VELOCISTAS</h4>
-            <h1 className="tit01">Experiência Inovadora para Crianças e Jovens</h1>
-            <p> Estamos em um momento crucial de transformação e precisamos ajustar nosso projeto para torná-lo mais escalável e relevante. A ideia central gira em torno da criação de uma plataforma que combina entretenimento e educação, permitindo que crianças e jovens explorem o fascinante mundo da engenharia, programação e design por meio de competições interativas com carros elétricos customizáveis. </p>
+      <div className="flex flex-col gap-8 mt-8">
+        <section className="p-4 bg-white shadow-md rounded-lg">
+          <div className="flex flex-col lg:flex-row items-center">
+            <div className="lg:w-1/2 p-4">
+              <h4 className="text-lg font-semibold text-gray-800 mb-2 pl-2">FUTURO VELOCISTAS</h4>
+              <h1 className="text-2xl md:text-4xl font-bold mb-4">Experiência Inovadora para Crianças e Jovens</h1>
+              <p className="text-gray-700">
+                Estamos em um momento crucial de transformação e precisamos ajustar nosso projeto para torná-lo mais escalável e relevante...
+              </p>
+            </div>
+            <img src={criancas} alt="Logo" className="lg:w-1/2 mt-4 lg:mt-0 w-full rounded-lg" />
           </div>
-          <img src={criancas} alt="Logo" className="intro-fundo" />
-        </div>
-      </section>
+        </section>
+      </div>
 
       <main className="projeto-arduino">
         <h4 className="sub04"><span className="linha-sub04"></span>POR QUE, ARDUINO?</h4>
@@ -103,7 +107,7 @@ export default function Home() {
         <div className="max-w-full py-40  md:w-1/2 p-5">
           <h1 className="text-xl font-bold mb-2">Faça seu cadastro para receber as últimas NOVIDADES:</h1>
           <input type="text" className="w-full p-2 border border-gray-300 rounded mb-2" placeholder="Seu email" />
-          <button className="w-full mt-2 bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">EMAIL</button>
+          <button onClick={handleSubmit} className="w-full mt-2 bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">EMAIL</button>
           <span className="block mt-2 text-sm text-gray-600">ESTE E-MAIL DEVE SER DE SEU RESPONSÁVEL LEGAL</span>
         </div>
       </section>
@@ -121,11 +125,11 @@ export default function Home() {
             </div>
           </div>
 
-                        <div className="bg-gray-200 bg-cover bg-i2 rounded-lg p-4">
-                            
-                            <div>
-                                <h2 className="text-xl font-bold mb-2 text-white">Vouchers/Ingressos</h2>
-                                <p className='text-white'>As premiações nas competições RaceVolt podem ser diversas e estimulantes...</p>
+          <div className="bg-gray-200 bg-cover bg-i2 rounded-lg p-4">
+
+            <div>
+              <h2 className="text-xl font-bold mb-2 text-white">Vouchers/Ingressos</h2>
+              <p className='text-white'>As premiações nas competições RaceVolt podem ser diversas e estimulantes...</p>
               <button className="mt-2 bg-white hover:bg-gray-300 text-black font-bold py-2 px-4 rounded">VEJA MAIS</button>
             </div>
           </div>

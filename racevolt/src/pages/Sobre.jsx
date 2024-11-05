@@ -40,56 +40,73 @@ const Sobre = () => {
           <p>Com um olhar voltado para o futuro, o RaceVolt está na vanguarda da transformação das corridas, desafiando os limites da tecnologia e promovendo uma abordagem mais responsável e consciente para o esporte.</p>
         </div>
       </div>
-      <div className="integrantes">
-        <h2>Conheça a RaceVolt</h2>
-        <p></p>
-        <div className="cards">
-          <div className="primeira-linha">
-            <div className="card-item position-top">
-              <img src={Abner} alt="" />
-              <p>Abner de Paiva Barbosa</p>
-              <div className="rede-social">
-                <img src={linkedin} alt="" />
-                <img src={github} alt="" />
-              </div>
-            </div> 
-            <div className="card-item">
-              <img src={Beatriz} alt="" />
-              <p>Beatriz Vieira de Novais</p>
-              <div className="rede-social">
-                <img src={linkedin} alt="" />
-                <img src={github} alt="" />
-              </div>
+      <div className="text-center py-8 bg-gray-50">
+        <h2 className="text-3xl font-semibold mb-4">Conheça a RaceVolt</h2>
+        <p className="mb-6 text-gray-600">Nossa equipe dedicada à inovação e tecnologia</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Integrante 1 */}
+          <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <div className="w-full h-64 overflow-hidden rounded-t-md mb-3">
+              <img src={Abner} alt="Abner de Paiva Barbosa" className="w-full h-full object-cover" />
             </div>
-            <div className="card-item">
-              <img src={Mariana} alt="" />
-              <p>Mariana Neugebauer Dourado</p>
-              <div className="rede-social">
-                <img src={linkedin} alt="" />
-                <img src={github} alt="" />
-              </div>
+            <p className="text-lg font-medium mb-2">Abner de Paiva Barbosa</p>
+            <div className="flex justify-center gap-4">
+              <img src={linkedin} alt="LinkedIn" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+              <img src={github} alt="GitHub" className="w-6 h-6 cursor-pointer hover:opacity-70" />
             </div>
           </div>
-          <div className="segunda-linha">
-            <div className="card-item">
-              <img src={Fernando} alt="" />
-              <p>Fernando Luiz Silva Antonio</p>
-              <div className="rede-social">
-                <img src={linkedin} alt="" />
-                <img src={github} alt="" />
-              </div>
+
+          {/* Integrante 2 */}
+          <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <div className="w-full h-64 overflow-hidden rounded-t-md mb-3">
+              <img src={Beatriz} alt="Beatriz Vieira de Novais" className="w-full h-full object-cover" />
             </div>
-            <div className="card-item position-top">
-              <img src={Thomas} alt="" />
-              <p>Thomas de Almeida Reichmann</p>
-              <div className="rede-social">
-                <img src={linkedin} alt="" />
-                <img src={github} alt="" />
-              </div>
+            <p className="text-lg font-medium mb-2">Beatriz Vieira de Novais</p>
+            <div className="flex justify-center gap-4">
+              <img src={linkedin} alt="LinkedIn" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+              <img src={github} alt="GitHub" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+            </div>
+          </div>
+
+          {/* Integrante 3 */}
+          <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <div className="w-full h-64 overflow-hidden rounded-t-md mb-3">
+              <img src={Mariana} alt="Mariana Neugebauer Dourado" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-lg font-medium mb-2">Mariana Neugebauer Dourado</p>
+            <div className="flex justify-center gap-4">
+              <img src={linkedin} alt="LinkedIn" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+              <img src={github} alt="GitHub" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+            </div>
+          </div>
+
+          {/* Integrante 4 */}
+          <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow w-96 h-96">
+            <div className="w-full h-64 overflow-hidden rounded-t-md mb-3">
+              <img src={Fernando} alt="Fernando Luiz Silva Antonio" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-lg font-medium mb-2">Fernando Luiz Silva Antonio</p>
+            <div className="flex justify-center gap-4">
+              <img src={linkedin} alt="LinkedIn" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+              <img src={github} alt="GitHub" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+            </div>
+          </div>
+
+          {/* Integrante 5 */}
+          <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
+            <div className="w-full h-64 overflow-hidden rounded-t-md mb-3">
+              <img src={Thomas} alt="Thomas de Almeida Reichmann" className="w-full h-full object-cover" />
+            </div>
+            <p className="text-lg font-medium mb-2">Thomas de Almeida Reichmann</p>
+            <div className="flex justify-center gap-4">
+              <img src={linkedin} alt="LinkedIn" className="w-6 h-6 cursor-pointer hover:opacity-70" />
+              <img src={github} alt="GitHub" className="w-6 h-6 cursor-pointer hover:opacity-70" />
             </div>
           </div>
         </div>
       </div>
+
     </div>
   );
 };
