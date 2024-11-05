@@ -32,5 +32,5 @@ Para configurar o ambiente de desenvolvimento:
 
 
 ## Links 
-- [Repositório no GitHub](#) _https://github.com/NeugeMa/RaceVolt_
-- [Site publicado na Vercel](#) _race-volt-nine.vercel.app_
+- [Repositório no GitHub](https://github.com/NeugeMa/RaceVolt)
+- [Site publicado na Vercel](race-volt-nine.vercel.app)
