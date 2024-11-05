@@ -7,11 +7,13 @@ import Rodape from "./Components/Rodape/Rodape";
 export default function App() {
   return (
     <>
-      <Cabecalho />
       <div className="container">
-        <Outlet />
+        <div className="min-h-screen">
+          <Cabecalho />
+          <Outlet />
+        </div>
+        <Rodape className="absolute sticky-bottom" />
       </div>
-      <Rodape />
     </>
   );
 }
