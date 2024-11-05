@@ -82,7 +82,7 @@ function Premiacoes() {
             
                     {/* Section 4 */}
                     <section className='section'>
-                        <div class="title-with-line"><h2>Premiações Arduino</h2> <hr/></div>
+                        <div class="title-with-line"><h2>Premiações RaceVolt</h2> <hr/></div>
                     
                          <CarrosselSection slides={slides} />
                     </section> 
