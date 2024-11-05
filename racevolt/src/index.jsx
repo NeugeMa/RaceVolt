@@ -9,6 +9,7 @@ import Sobre from "./pages/Sobre";
 import reportWebVitals from "./reportWebVitals";
 import Car from "./pages/Carro";
 import Premiacoes from "./pages/Premiacoes";
+import PageNotFound from "./pages/PageNotFound";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
       { path: "contato", element: <Contato /> },
       { path: "sobre", element: <Sobre /> },
       { path: "premiacoes", element: <Premiacoes /> },
-      { path: "car", element: <Car /> }
+      { path: "car", element: <Car /> },
+      { path: "*", element: <PageNotFound /> },
 
     ],
   },

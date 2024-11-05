@@ -16,33 +16,33 @@ const Rodape = () => {
                         <nav>
                             <ul className="conteudo">
                                 <h4>PROJETO</h4>
-                                    <li> <Link to="/sobre" className="url">Sobre Nós</Link> </li> 
-                                    <li> <Link to="/" className="url">RaceVolt</Link> </li> 
-                                    <li> <Link to="/contato" className="url">Contato</Link> </li> 
+                                    <li> <Link to="/sobre" className="url text-gray-100">Sobre Nós</Link> </li> 
+                        <li> <Link to="/" className="url text-gray-100">RaceVolt</Link> </li> 
+                        <li> <Link to="/contato" className="url text-gray-100">Contato</Link> </li> 
                             </ul>
                         </nav>
 
                         <nav>
                             <ul className="conteudo">
                                 <h4>CONECTE</h4>
-                                <li> <Link to="https://github.comhttps://github.com/NeugeMa/RaceVolt" className="url">GitHub</Link> </li> 
-                                <li> <Link to="https://linkedin.com" className="url">LinkedIn</Link> </li> 
+                        <li> <Link to="https://github.comhttps://github.com/NeugeMa/RaceVolt" className="url text-gray-100">GitHub</Link> </li> 
+                                <li> <Link to="https://linkedin.com" className="url text-gray-100">LinkedIn</Link> </li> 
                             </ul>
                         </nav>
 
                         <nav>
                             <ul className="conteudo">
                                 <h4>MAIS+</h4>
-                                    <li> <Link to="/" className="url">Premiações</Link> </li> 
-                                    <li> <Link to="/" className="url">Doações</Link> </li> 
+                                    <li> <Link to="/" className="url text-gray-100">Premiações</Link> </li> 
+                                    <li> <Link to="/" className="url text-gray-100">Doações</Link> </li> 
                             </ul>
                         </nav>
                     
                         <div className="forms-footer">
-                            <h2>Inscreva-se para receber nossas novidades!</h2>
+                    <h2 className="text-gray-100">Inscreva-se para receber nossas novidades!</h2>
                             <div className="form-container">
-                                <input type="text" className="form-input" /> 
-                                <button className="form-button" onClick={handleSubmit}>EMAIL:</button>
+                                <input type="text" className="form-input text-gray-100" /> 
+                                <button className="form-button text-gray-100" onClick={handleSubmit}>EMAIL:</button>
                             </div>
                         </div>
                     </div>
