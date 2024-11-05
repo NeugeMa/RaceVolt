@@ -23,10 +23,6 @@ Para configurar o ambiente de desenvolvimento:
 
 5. Execute por final `npm start` para poder se aventurar neste projeto. 
 
-# Dependências 
-- npm install styled-components
-- npm install bootstrap
-
 # Integrantes 
 - **Abner de Paiva Barbosa**             | RM558468
 - **Beatriz Vieira de Novais**           | RM554746
@@ -36,5 +32,5 @@ Para configurar o ambiente de desenvolvimento:
 
 
 ## Links 
-- [Repositório no GitHub](#) _(https://github.com/NeugeMa/RaceVolt)_
-- [Site publicado na Vercel](#) _()_
+- [Repositório no GitHub](#) _https://github.com/NeugeMa/RaceVolt_
+- [Site publicado na Vercel](#) _race-volt-nine.vercel.app_
