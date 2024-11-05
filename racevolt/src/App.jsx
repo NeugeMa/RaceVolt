@@ -8,9 +8,9 @@ export default function App() {
   return (
     <>
       <Cabecalho />
-    <div className="container">
-      <Outlet />
-    </div>
+      <div className="container">
+        <Outlet />
+      </div>
       <Rodape />
     </>
   );
